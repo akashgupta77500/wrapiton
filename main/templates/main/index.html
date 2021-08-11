@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WRAPITON</title>
+
+</head>
+
+<!-- To load static.css -->
+{% load static %}
+<lin rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}"/>
+
+<!-- change background color of html file-- code written in copy-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand -->
+  <a class="navbar-brand" href="">
+    <!-- add logo as image -->
+    <img src="static/main/images/Logo.jpg" alt="WRAPITON" style="width:200px;">
+  </a>
+
+  <!-- Toggle Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- New search bar -->
+
+
+
+
+  <!-- search Bar -->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-1" type="text" placeholder="Search Your Product!">
+    <button class="btn btn-primary" type="submit">Search</button>
+  </form>
+
+  <!-- Navbar link content--like button in Navigation bar -->
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">
+          <!-- Create a button-->
+        <button type="button" class="btn btn-danger">MEN</button>
+      </a>
+    </li>
+    <li class="nav-item">
+      <!-- Create a button in navigation bar with link-->
+      <a class="nav-link active" href="#">
+        <button type="button" class="btn btn-danger btn-md">WOMEN</button>
+      </a>
+    </li>
+    <li class="nav-item">
+      <!-- Create a button in navigation bar with link-->
+      <a class="nav-link active" href="#">
+        <button type="button" class="btn btn-danger btn-md">MOBILE</button>
+      </a>
+    </li>
+    <li class="nav-item">
+      <!-- Create a button in navigation bar with link-->
+      <a class="nav-link active" href="#">
+        <button type="button" class="btn btn-danger btn-md">HOME ACCESORIES</button>
+      </a>
+    </li>
+    <li class="nav-item">
+      <!-- Create a button in navigation bar with link-->
+      <a class="nav-link active" href="#">
+        <button type="button" class="btn btn-danger btn-md">ARIVAL SOON</button>
+      </a>
+    </li>
+    <li class="nav-item">
+      <!-- Create a button in navigation bar with link-->
+      <a class="nav-link active" href="#">
+        <button type="button" class="btn btn-danger btn-md">SOCIAL</button>
+      </a>
+    </li>
+<!-- Create Dropdown-->
+
+  </ul>
+</div>
+
+  <!-- Profile with image and data -->
+  <div class="card" style="width:100px">
+  <img class="card-img-top" src="static/main/images/Logo.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title"></h4>
+    <p class="card-text"></p>
+    <a href="{% url 'login'%} " class="btn btn-primary stretched-link">Login</a>
+  </div>
+ </div>
+</div>
+
+</nav>
+
+<!-- IMAGE SLIDER -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+
+<body>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/main/images/11.jpg" alt="Los Angeles" width="100" height="100">
+    </div>
+    <div class="carousel-item">
+      <img src="static/main/images/12.jpg" alt="Chicago" width="100" height="100">
+    </div>
+    <div class="carousel-item">
+      <img src="static/main/images/13.jpg" alt="New York" width="100" height="100">
+    </div>
+    <div class="carousel-item">
+      <img src="static/main/images/14.jpg" alt="New York" width="100" height="100">
+    </div>
+    <div class="carousel-item">
+      <img src="static/main/images/15.jpg" alt="New York" width="100" height="100">
+    </div>
+    <div class="carousel-item">
+      <img src="static/main/images/16.jpg" alt="New York" width="100" height="100">
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<br>
+
+
+<!--Bottom Profile of app -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>About</h3>
+      <p>Contact Us</p>
+      <p>About Us</p>
+      <p>Career</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Help</h3>
+      <p>Payment</p>
+      <p>Shipping</p>
+      <p>Cancellation</p>
+      <p>Return</p>
+      <p>FAQ</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Policy</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Registered Address</h3>
+      <p> H-No-1035, Vijaya Bank Layout, Bilekahalli Village Bangalore Karnataka, 560076 India</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>E-Mail</h3>
+      <p>support@wrapiton.in</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Social</h3>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>Twitter</p>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+
+
